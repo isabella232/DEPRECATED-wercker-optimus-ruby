@@ -1,6 +1,9 @@
 site :opscode
 
-cookbook 'berkshelf', git: 'https://github.com/wercker/berkshelf-cookbook.git'
+cookbook 'wercker-rbenv', git: 'https://github.com/wercker/wercker-rbenv-cookbook.git'
 
 cookbook 'apt'
+cookbook 'python'
+cookbook 'mysql'
 cookbook 'build-essential'
+cookbook 'postgresql', '1.0.0'
