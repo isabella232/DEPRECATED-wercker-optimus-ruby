@@ -1,7 +1,7 @@
 require 'berkshelf/vagrant'
 
 Vagrant::Config.run do |config|
-  config.vm.host_name = "optimus-blank"
+  config.vm.host_name = "optimus-ruby"
 
   config.vm.box = "precise64"
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
