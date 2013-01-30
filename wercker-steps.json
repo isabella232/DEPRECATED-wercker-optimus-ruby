@@ -1,0 +1,32 @@
+{
+  "platformSteps" : [],
+  "dependencySteps" : [
+    {"name" : "cookbooks", "type" : "commands-step", "blocking" : false,
+      "options" : {
+        "dependentOnFile" : "Berksfile",
+        "commands" : [
+          "cd $WERCKER_ROOT",
+          "berks install -p cookbooks"
+        ]}}
+  ],
+  "testSteps" : [
+    {"name" : "does_optimus_json_exist", "type" : "commands-step", "blocking" : false,
+      "options" : {
+        "commands" : [
+          "cd $WERCKER_ROOT",
+          "test -e optimus.json"
+        ]}},
+    {"name" : "json_lint_optimus", "type" : "commands-step", "blocking" : false,
+      "options" : {
+        "commands" : [
+          "cd $WERCKER_ROOT",
+          "cat optimus.json | python -mjson.tool"
+        ]}},
+    {"name" : "json_lint_steps", "type" : "commands-step", "blocking" : false,
+      "options" : {
+        "dependentOnFile" : "wercker-steps.json",
+        "commands" : [
+          "cat wercker-steps.json | python -mjson.tool"
+        ]}}
+  ]
+}

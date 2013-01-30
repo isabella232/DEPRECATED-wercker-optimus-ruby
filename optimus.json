@@ -1,0 +1,17 @@
+{
+	"name" : "optimus",
+	"version" : "0.0.1",
+	"stackInfo" :
+  	{
+      "stackVersions" : ["0.0.0"],
+      "defaultVersion" : "0.0.0",
+      "versionMapping": [
+          {"0" : "0.0.0"}
+      ]
+  	},
+  "isPrivate" : false,
+  "mainDetect" : [ {"files" : ["optimus.json"]}],
+  "supportDetect" : [],
+  "packageIgnore" : [],
+  "priority" : 1000
+}
