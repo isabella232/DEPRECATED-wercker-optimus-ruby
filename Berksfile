@@ -1,6 +1,7 @@
 site :opscode
 
 cookbook 'wercker-rbenv', git: 'https://github.com/wercker/wercker-rbenv-cookbook.git'
+cookbook 'wercker-essential', git: 'https://github.com/wercker/wercker-essential-cookbook.git'
 
 cookbook 'apt'
 cookbook 'python'

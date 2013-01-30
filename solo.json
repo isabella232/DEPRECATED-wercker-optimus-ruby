@@ -5,6 +5,7 @@
   "run_list": [
     "recipe[apt]",
     "recipe[build-essential]",
+    "recipe[wercker-essential]",
     "recipe[python::default]",
     "recipe[wercker-rbenv]",
     "recipe[mysql::client]",
