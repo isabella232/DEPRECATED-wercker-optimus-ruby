@@ -1,4 +1,4 @@
-Optimus: optimus
+Optimus: ruby
 ================
 
 Use
