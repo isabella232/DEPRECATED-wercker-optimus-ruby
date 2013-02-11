@@ -19,16 +19,8 @@
   "dependencySteps": [
     {
       "name": "bundle_install",
-      "type": "commands-step",
-      "blocking": false,
-      "options": {
-        "dependentOnFile": "Gemfile",
-        "commands": [
-          "cd $WERCKER_ROOT",
-          "bundle install",
-          "rbenv rehash"
-        ]
-      }
+      "type": "bundle-install-step",
+      "blocking": false
     }
   ]
 }
