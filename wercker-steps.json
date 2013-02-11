@@ -1,30 +1,48 @@
 {
-  "platformSteps" : [
-    {"name" : "platform", "type" : "commands-step", "blocking" : true,
-      "options" : {
-        "commands" : [
+  "platformSteps": [
+    {
+      "name": "platform",
+      "type": "commands-step",
+      "blocking": true,
+      "options": {
+        "commands": [
           "sudo chown ubuntu -R /build",
           "rbenv global $WERCKER_PLATFORM_VERSION",
           "rbenv version",
           "ruby --version",
           "gem --version",
           "cd $WERCKER_ROOT"
-        ]}}],
-  "dependencySteps" : [
-    {"name" : "bundle_install", "type" : "commands-step", "blocking" : false,
-      "options" : {
-        "dependentOnFile" : "Gemfile",
-        "commands" : [
+        ]
+      }
+    }
+  ],
+  "dependencySteps": [
+    {
+      "name": "bundle_install",
+      "type": "commands-step",
+      "blocking": false,
+      "options": {
+        "dependentOnFile": "Gemfile",
+        "commands": [
           "cd $WERCKER_ROOT",
           "bundle install",
           "rbenv rehash"
-        ]}}],
-  "testSteps" : [
-    {"name" : "bundle_exec_rake", "type" : "commands-step", "blocking" : false,
-      "options" : {
-        "dependentOnFile" : "Rakefile",
-        "commands" : [
+        ]
+      }
+    }
+  ],
+  "testSteps": [
+    {
+      "name": "bundle_exec_rake",
+      "type": "commands-step",
+      "blocking": false,
+      "options": {
+        "dependentOnFile": "Rakefile",
+        "commands": [
           "cd $WERCKER_ROOT",
           "bundle exec rake"
-        ]}}]
+        ]
+      }
+    }
+  ]
 }
