@@ -30,19 +30,5 @@
         ]
       }
     }
-  ],
-  "testSteps": [
-    {
-      "name": "bundle_exec_rake",
-      "type": "commands-step",
-      "blocking": false,
-      "options": {
-        "dependentOnFile": "Rakefile",
-        "commands": [
-          "cd $WERCKER_ROOT",
-          "bundle exec rake"
-        ]
-      }
-    }
   ]
 }
