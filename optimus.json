@@ -1,21 +1,48 @@
 {
-	"name" : "ruby",
-	"version" : "0.0.1",
-	"stackInfo" :
-  	{
-      "stackVersions" : ["1.8.7-p371", "1.9.3-p327"],
-      "defaultVersion" : "1.9.3-p327",
-      "versionMapping": [
-          {"1" : "1.9.3-p327"},
-          {"1.9" : "1.9.3-p327"},
-          {"1.9.3" : "1.9.3-p327"},
-          {"1" : "1.8.7-p371"},
-          {"1.8" : "1.8.7-p371"},
-          {"1.8.7" : "1.8.7-p371"}]
-  	},
-  "isPrivate" : false,
-  "mainDetect" : [ {"files" : ["Gemfile"]}],
-  "supportDetect" : [],
-  "packageIgnore" :  [ ".idea", ".git", ".gitignore", ".gitmodules", ".bundler"],
-  "priority" : 8000
+  "name": "ruby",
+  "version": "0.0.2",
+  "stackInfo": {
+    "stackVersions": [
+      "1.8.7-p371",
+      "1.9.3-p327"
+    ],
+    "defaultVersion": "1.9.3-p327",
+    "versionMapping": [
+      {
+        "1": "1.9.3-p327"
+      },
+      {
+        "1.9": "1.9.3-p327"
+      },
+      {
+        "1.9.3": "1.9.3-p327"
+      },
+      {
+        "1": "1.8.7-p371"
+      },
+      {
+        "1.8": "1.8.7-p371"
+      },
+      {
+        "1.8.7": "1.8.7-p371"
+      }
+    ]
+  },
+  "isPrivate": false,
+  "mainDetect": [
+    {
+      "files": [
+        "Gemfile"
+      ]
+    }
+  ],
+  "supportDetect": [],
+  "packageIgnore": [
+    ".idea",
+    ".git",
+    ".gitignore",
+    ".gitmodules",
+    ".bundler"
+  ],
+  "priority": 8000
 }
