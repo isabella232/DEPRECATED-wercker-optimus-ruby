@@ -16,6 +16,6 @@
   "isPrivate" : false,
   "mainDetect" : [ {"files" : ["Gemfile"]}],
   "supportDetect" : [],
-  "packageIgnore" :  [ ".idea", ".git", ".gitignore", ".gitmodules"],
+  "packageIgnore" :  [ ".idea", ".git", ".gitignore", ".gitmodules", ".bundler"],
   "priority" : 8000
 }
