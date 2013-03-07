@@ -1,6 +1,6 @@
 {
   "name": "ruby",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "stackInfo": {
     "stackVersions": [
       "1.8.7-p371",
