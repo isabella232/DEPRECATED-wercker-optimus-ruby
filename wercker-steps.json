@@ -11,9 +11,15 @@
           "rbenv version",
           "ruby --version",
           "gem --version",
-          "cd $WERCKER_ROOT"
+          "cd $WERCKER_ROOT",
+          "export RAILS_ENV=test"
         ]
       }
+    },
+    {
+      "name": "rails databaseyml",
+      "type": "rails-databaseyml-step",
+      "blocking": false
     }
   ],
   "dependencySteps": [
