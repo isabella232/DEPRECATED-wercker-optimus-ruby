@@ -11,8 +11,7 @@
           "rbenv version",
           "ruby --version",
           "gem --version",
-          "cd $WERCKER_ROOT",
-          "export RAILS_ENV=test"
+          "cd $WERCKER_ROOT"
         ]
       }
     },
